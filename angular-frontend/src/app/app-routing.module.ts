@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { TodoAppComponent } from './todo-app/todo-app.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 const routes: Routes = [
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:'employee-details/:id',
     component: EmployeeDetailsComponent
+  },
+  {
+    path:'todo-app',
+    component: TodoAppComponent
   }
 
 ];

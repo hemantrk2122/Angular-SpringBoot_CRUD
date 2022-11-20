@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
 import { FormsModule } from '@angular/forms';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { TodoAppComponent } from './todo-app/todo-app.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     EmployeeListComponent,
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    TodoAppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
