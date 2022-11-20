@@ -1,1 +1,9 @@
-<p>todo-app works!</p>
+<h3>ToDo Animated App</h3>
+<br>
+<input #itemInput class="form-control" (keyup.enter)="addItem(itemInput)">
+
+<div *ngIf="items"  class="list-group">
+    <button type="button" *ngFor="let item of items" @slideIn (click)="removeItem(item)" class="list-group-item">
+        {{item}}
+    </button>
+</div>
