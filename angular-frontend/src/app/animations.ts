@@ -7,7 +7,7 @@ export let fade = trigger('fade',[
   ])
 
   export let slideIn = trigger('slideIn',[
-    transition('void => *',[animate(100,style({transform:'translateX(10px)'}))]),
-    transition('* => void',[animate(100,style({transform:'translateX(-10px)',backgroundColor:'red'}))]),
+    transition('void => *',[animate(1000,style({transform:'translateX(10px)'}))]),
+    transition('* => void',[animate(1000,style({transform:'translateX(-10px)',backgroundColor:'red'}))]),
 
   ])
