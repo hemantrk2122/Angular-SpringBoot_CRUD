@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { fade, slideIn } from '../animations';
+import { fade, flyInOut, pageAnimations, slideIn } from '../animations';
 
 @Component({
   selector: 'app-todo-app',
   templateUrl: './todo-app.component.html',
   styleUrls: ['./todo-app.component.css'],
-  animations:[slideIn]
+  animations:[flyInOut]
 })
 export class TodoAppComponent implements OnInit {
 
