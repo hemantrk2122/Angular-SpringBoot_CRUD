@@ -30,7 +30,5 @@ export class TodoAppComponent implements OnInit {
   }
 
 }
-function anumate(): import("@angular/animations").AnimationMetadata {
-  throw new Error('Function not implemented.');
-}
+
 
